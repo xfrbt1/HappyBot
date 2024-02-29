@@ -23,3 +23,7 @@ def create_plot_picture(db: DictStore, decode_dict: dict, filename: str) -> dict
     plt.savefig(filename, bbox_inches="tight")
     plt.close()
     return {decode_dict[key]: approachs_counter[key] for key in approachs_counter}
+
+
+def get_entire_count(counter: dict) -> int:
+    return sum(v for v in counter.values())

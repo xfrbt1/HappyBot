@@ -13,4 +13,5 @@ async def start_command(
     full_name = message.from_user.full_name
     username = message.from_user.username
     db.create(str(user_id), username=username, full_name=full_name)
-    await message.answer(f"Привет, {full_name}!\n" f"Пройти опрос:\n" f"/survey")
+    text = f"Привет, {full_name}!\n" f"Пройти опрос:\n" f"/survey"
+    await message.answer(text=text)

@@ -2,7 +2,6 @@ import asyncio
 from aiogram import Bot
 from aiogram.types import BotCommand
 
-from src.dbrepo.dict_store import DictStore
 from src.utils.message_for import message_for
 from src.config.settings import get_settings
 from src.handlers import dp
