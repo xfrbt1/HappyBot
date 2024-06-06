@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     admin_id: str | None = "6288131392 501796953"
     users_db: str | None = "users"
     info_db: str | None = "static"
+
+    data_path: str = "../data/"
     diagram: str = "diagram.png"
 
     model_config = SettingsConfigDict(env_file="../.env", env_file_encoding="utf-8")
