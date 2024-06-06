@@ -6,7 +6,7 @@ class DictStore:
     def __init__(self, filename: str):
         """
         DB SCHEMA:
-        row_id(int | str) : row(dict | ...)
+        row_id (int | str) : row(dict | ...)
         """
         self.db: Shelf = shelve.open(filename)
 
