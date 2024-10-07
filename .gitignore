@@ -22,3 +22,6 @@ venv
 
 **/migrations
 **/migrations/
+
+data
+/data
